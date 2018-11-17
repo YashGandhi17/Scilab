@@ -1,0 +1,11 @@
+Wi=input("enter wave form unit impuse(ui) unitstep(us) unit ramp(ur):");
+Si=input("enter starting index(-ve):");
+Ei=input("enter ending value(+ve):");
+O=input("value to wave advance(-ve) or delay(+ve):");
+exec('wave_fun.sce');
+[Wo,n]=fn_wave_fun(Wi,Si,Ei,O);
+figure(1);
+plot2d3(n,Wo);
+xlabel("y");
+ylabel("x");
+title("wave form");
